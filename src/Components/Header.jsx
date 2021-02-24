@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <div className="Header">
             <div className="Header__Logo"><img
-                src="https://www.pngkey.com/png/detail/177-1779452_razer-logo-png-transparent-image-razer-logo.png"
+                src="https://st.depositphotos.com/1105977/2595/i/950/depositphotos_25954971-stock-photo-colored-circle.jpg"
                 alt=""/></div>
         </div>
     )

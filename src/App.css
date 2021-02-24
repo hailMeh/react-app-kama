@@ -3,7 +3,7 @@
     grid-template-areas:
 "header header header header header header header header header header header header"
 "navi navi content content content content content content content content content content";
-    grid-template-rows: 80px 920px;
+    grid-template-rows: 78px 920px;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 18px;
     margin: 0 auto;
@@ -11,19 +11,20 @@
 
 }
 .Header__Logo img {
-    width: 70px;
+    width: 76px;
+
 }
 
 
 .Header {
     grid-area: header;
-    background: #01b301;
+    background: #3CB371;
     margin-top: 10px;
 
 }
 .Navigation {
     grid-area: navi;
-    background: #01b301;
+    background: #3CB371;
 
 }
 .Navigation ul{
