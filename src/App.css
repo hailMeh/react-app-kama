@@ -1,66 +1,66 @@
 .Container {
     display: grid;
     grid-template-areas:
-"header header header header header header header header header header header header"
-"navi navi content content content content content content content content content content";
-    grid-template-rows: 78px 920px;
-    grid-template-columns: repeat(12, 1fr);
+"header header header"
+"navi profile profile";
+    grid-template-rows: 80px 920px;
+    grid-template-columns: 1fr 2fr 3fr;
     grid-gap: 18px;
     margin: 0 auto;
     width: 1280px;
 }
 
-.Content {
-    grid-area: content;
+.profile {
+    grid-area: profile;
 
     display: grid;
     grid-template-rows: 260px 60px 100px 60px 120px 60px 90px 90px;
     grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr;
     margin: 0 auto;
-    width: 1065px;
+    width: 1055px;
     grid-gap: 10px;
     grid-template-areas:
 "mainImage mainImage mainImage mainImage mainImage mainImage"
-"contentAvatar ContentName ContentName ContentName ContentName ContentName"
-"contentAvatar ContentAboutMe ContentAboutMe ContentAboutMe ContentAboutMe ContentAboutMe"
+"profileAvatar profileName profileName profileName profileName profileName"
+"profileAvatar profileAboutMe profileAboutMe profileAboutMe profileAboutMe profileAboutMe"
 "myPosts myPosts myPosts myPosts myPosts myPosts"
-"ContentInput ContentInput ContentInput ContentInput ContentInput ContentInput"
-"ContentButton ContentButton ContentButton ContentButton ContentButton ContentButton"
-"ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll"
-"ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll";
+"profileInput profileInput profileInput profileInput profileInput profileInput"
+"profileButton profileButton profileButton profileButton profileButton profileButton"
+"profileNewsAll profileNewsAll profileNewsAll profileNewsAll profileNewsAll profileNewsAll"
+"profileNewsAll profileNewsAll profileNewsAll profileNewsAll profileNewsAll profileNewsAll";
 
 
 }
-.Content__MainImage {
+.profile__MainImage {
     grid-area: mainImage;
 }
-.Content__MainImage img{
+.profile__MainImage img{
     width: 100%;
     height: 100%;
     background-size: cover;
 }
-.Content__Avatar {
-    grid-area: contentAvatar;
+.profile__Avatar {
+    grid-area: profileAvatar;
 
 
 }
-.Content__Avatar img{
+.profile__Avatar img{
     width: 100%;
     height: 100%;
     background-size: cover;
     border-radius: 21px;
     margin-top: 16px;
 }
-.Content__Name{
-    grid-area: ContentName;
+.profile__Name{
+    grid-area: profileName;
     color: #322c2c;
     padding-left: 30px;
     align-self: start;
     font-size: 18px;
 
 }
-.Content__About_Me {
-    grid-area: ContentAboutMe;
+.profile__About_Me {
+    grid-area: profileAboutMe;
     color: #322c2c;
     align-self: center;
     justify-self: start;
@@ -68,27 +68,27 @@
     font-weight: 700;
 
 }
-.Content__About_Me ul{
-    grid-area: ContentAboutMe;
+.profile__About_Me ul{
+    grid-area: profileAboutMe;
     color: #322c2c;
     list-style: none;
     padding-left: 30px;
 
 }
-.Content__MyPosts{
+.profile__MyPosts{
     grid-area: myPosts;
     align-self: start;
     color: #322c2c;
     font-weight: 500;
     font-size: 32px;
 }
-.Content__Input{
-    grid-area: ContentInput;
+.profile__Input{
+    grid-area: profileInput;
     align-self: end;
 
 }
-.Content__Input input{
-    grid-area: ContentInput;
+.profile__Input input{
+    grid-area: profileInput;
     width: 90%;
     height: 80px;
     background: #cacaca;
@@ -104,21 +104,21 @@
 
 }
 
-.Content__ButtonSend{
-    grid-area: ContentButton;
+.profile__ButtonSend{
+    grid-area: profileButton;
     align-self: center;
     justify-self: end;
 }
-.Content__ButtonSend button{
-    background: #01b301;
+.profile__ButtonSend button{
+    background: #3CB371;;
     margin-right: 75px;
     padding: 7px;
     color: white;
     font-size: 22px;
 }
 
-.Content__NewsAll{
-    grid-area: ContentNewsAll;
+.profile__NewsAll{
+    grid-area: profileNewsAll;
     display: grid;
     grid-template-areas:
 "News1 News1 News1 News1 News1 News1"
@@ -129,7 +129,7 @@
     margin: 0 auto;
     width: 1280px;
 }
-.Content__News1{
+.profile__News1{
     grid-area: News1;
     display: grid;
     grid-template-areas:
@@ -140,12 +140,12 @@
     margin: 0 auto;
     width: 1280px;
 }
-.Content__MyNews1 {
+.profile__MyNews1 {
     grid-area: MyNews1;
     justify-self: start;
     align-self: start;
 }
-.Content__News2{
+.profile__News2{
     grid-area: News2;
     display: grid;
     grid-template-areas:
@@ -156,7 +156,7 @@
     margin: 0 auto;
     width: 1280px;
 }
-.Content__MyNews2 {
+.profile__MyNews2 {
     grid-area: MyNews2;
     justify-self: start;
     align-self: start;
@@ -164,7 +164,7 @@
 
 
 
-.Circle {
+.profile__Circle {
     grid-area: Circle;
     width: 45px;
     height: 45px;
@@ -173,7 +173,7 @@
     margin-top: 10px;
 
 }
-.Content__NewsAll p{
+.profile__NewsAll p{
 
     color: #322c2c;
     font-weight: 600;
