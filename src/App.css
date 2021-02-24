@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+.Container {
+    display: grid;
+    grid-template-areas:
+"header header header header header header header header header header header header"
+"navi navi content content content content content content content content content content";
+    grid-template-rows: 80px 920px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 18px;
+    margin: 0 auto;
+    width: 1280px;
+
+}
+.Header__Logo img {
+    width: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Header {
+    grid-area: header;
+    background: #01b301;
+    margin-top: 10px;
+
+}
+.Navigation {
+    grid-area: navi;
+    background: #01b301;
+
+}
+.Navigation ul{
+    grid-area: navi;
+    list-style-type: none;
+    color: white;
+    font-size: 32px;
+
+}
+.Navigation__Settings{
+    padding-top: 40px;
+}
+.Content {
+    grid-area: content;
+
+    display: grid;
+    grid-template-rows: 260px 60px 100px 60px 120px 60px 90px 90px;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 1065px;
+    grid-gap: 10px;
+    grid-template-areas:
+"mainImage mainImage mainImage mainImage mainImage mainImage"
+"contentAvatar ContentName ContentName ContentName ContentName ContentName"
+"contentAvatar ContentAboutMe ContentAboutMe ContentAboutMe ContentAboutMe ContentAboutMe"
+"myPosts myPosts myPosts myPosts myPosts myPosts"
+"ContentInput ContentInput ContentInput ContentInput ContentInput ContentInput"
+"ContentButton ContentButton ContentButton ContentButton ContentButton ContentButton"
+"ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll"
+"ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll ContentNewsAll";
+
+
+}
+.Content__MainImage {
+    grid-area: mainImage;
+}
+.Content__MainImage img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.Content__Avatar {
+    grid-area: contentAvatar;
+
+
+}
+.Content__Avatar img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 21px;
+    margin-top: 16px;
+}
+.Content__Name{
+    grid-area: ContentName;
+    color: #322c2c;
+    padding-left: 30px;
+    align-self: start;
+    font-size: 18px;
+
+}
+.Content__About_Me {
+    grid-area: ContentAboutMe;
+    color: #322c2c;
+    align-self: center;
+    justify-self: start;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.Content__About_Me ul{
+    grid-area: ContentAboutMe;
+    color: #322c2c;
+    list-style: none;
+    padding-left: 30px;
+
+}
+.Content__MyPosts{
+    grid-area: myPosts;
+    align-self: start;
+    color: #322c2c;
+    font-weight: 500;
+    font-size: 32px;
+}
+.Content__Input{
+    grid-area: ContentInput;
+    align-self: end;
+
+}
+.Content__Input input{
+    grid-area: ContentInput;
+    width: 90%;
+    height: 80px;
+    background: #cacaca;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    color: #777575;
+    margin-top: 120px;
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 20px;
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Content__ButtonSend{
+    grid-area: ContentButton;
+    align-self: center;
+    justify-self: end;
+}
+.Content__ButtonSend button{
+    background: #01b301;
+    margin-right: 75px;
+    padding: 7px;
+    color: white;
+    font-size: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Content__NewsAll{
+    grid-area: ContentNewsAll;
+    display: grid;
+    grid-template-areas:
+"News1 News1 News1 News1 News1 News1"
+"News2 News2 News2 News2 News2 News2";
+    grid-template-rows: 90px 90px;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    width: 1280px;
+}
+.Content__News1{
+    grid-area: News1;
+    display: grid;
+    grid-template-areas:
+"Circle MyNews1 MyNews1 ";
+    grid-template-rows: 90px;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    width: 1280px;
+}
+.Content__MyNews1 {
+    grid-area: MyNews1;
+    justify-self: start;
+    align-self: start;
+}
+.Content__News2{
+    grid-area: News2;
+    display: grid;
+    grid-template-areas:
+"Circle MyNews2 MyNews2 ";
+    grid-template-rows: 90px;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    width: 1280px;
+}
+.Content__MyNews2 {
+    grid-area: MyNews2;
+    justify-self: start;
+    align-self: start;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Circle {
+    grid-area: Circle;
+    width: 45px;
+    height: 45px;
+    background: yellow;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+.Content__NewsAll p{
+
+    color: #322c2c;
+    font-weight: 600;
+    font-size: 20px;
 }
