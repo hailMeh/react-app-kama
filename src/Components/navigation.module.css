@@ -1,0 +1,13 @@
+.list{
+    list-style-type: none;
+    color: white;
+    font-size: 32px;
+}
+.settings{
+    padding-top: 40px;
+}
+.navigation {
+    grid-area: navi;
+    background: #3CB371;
+
+}

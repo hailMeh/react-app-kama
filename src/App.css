@@ -8,35 +8,8 @@
     grid-gap: 18px;
     margin: 0 auto;
     width: 1280px;
-
-}
-.Header__Logo img {
-    width: 76px;
-
 }
 
-
-.Header {
-    grid-area: header;
-    background: #3CB371;
-    margin-top: 10px;
-
-}
-.Navigation {
-    grid-area: navi;
-    background: #3CB371;
-
-}
-.Navigation ul{
-    grid-area: navi;
-    list-style-type: none;
-    color: white;
-    font-size: 32px;
-
-}
-.Navigation__Settings{
-    padding-top: 40px;
-}
 .Content {
     grid-area: content;
 

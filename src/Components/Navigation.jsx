@@ -1,12 +1,13 @@
+import navi from './navigation.module.css';
 const Navigation = () => {
     return(
-        <div className={"Navigation"}>
-            <ul>
-                <li className={"Navigation__Profile"}>Profile</li>
-                <li className={"Navigation__Messages"}>Messages</li>
-                <li className={"Navigation__News"}>News</li>
-                <li className={"Navigation__Music"}>Music</li>
-                <li className={"Navigation__Settings"}>Settings</li>
+        <div className={navi.navigation}>
+            <ul className={navi.list}>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>News</li>
+                <li>Music</li>
+                <li className={navi.settings}>Settings</li>
             </ul>
         </div>
     )
