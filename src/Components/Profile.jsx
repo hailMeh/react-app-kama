@@ -13,7 +13,7 @@ const Profile = () => {
             <div className={"Content__Input"}><input type={"text"} value={"Your News"}/></div>
             <div className={"Content__ButtonSend"}><button>Send</button></div>
             <div className={"Content__NewsAll"}>
-            <div className={"Content__News1"}> <div className={"Circle"}></div><p className={"Content__MyNews1"}>Yesterday i found the body</p></div>
+            <div className={"Content__News1"}> <div className={"Circle"}></div><p className={"Content__MyNews1"}>Yesterday i found the body, poor guy</p></div>
             <div className={"Content__News2"}> <div className={"Circle"}></div><p className={"Content__MyNews2"}>It was my friend Pedro, he was a good guy</p></div>
         </div></div>
     )
