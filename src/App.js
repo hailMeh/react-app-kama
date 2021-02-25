@@ -1,7 +1,7 @@
 import './App.css';
-import Header from "./Components/Header";
-import Navigation from "./Components/Navigation";
-import Profile from "./Components/Profile";
+import Header from "./Components/header/Header";
+import Navigation from "./Components/navigation/Navigation";
+import Profile from "./Components/profile/Profile";
 
 
 const App = () => {
