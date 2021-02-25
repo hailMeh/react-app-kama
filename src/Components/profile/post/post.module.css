@@ -1,0 +1,17 @@
+
+.profile__Circle {
+    grid-area: Circle;
+    width: 45px;
+    height: 45px;
+    background: yellow;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+
+.profile__MyNews {
+    color: #322c2c;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 350px;
+}

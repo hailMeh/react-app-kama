@@ -31,27 +31,32 @@
 
 
 }
+
 .profile__MainImage {
     grid-area: mainImage;
 }
-.profile__MainImage img{
+
+.profile__MainImage img {
     width: 100%;
     height: 100%;
     background-size: cover;
 }
+
 .profile__Avatar {
     grid-area: profileAvatar;
 
 
 }
-.profile__Avatar img{
+
+.profile__Avatar img {
     width: 100%;
     height: 100%;
     background-size: cover;
     border-radius: 21px;
     margin-top: 16px;
 }
-.profile__Name{
+
+.profile__Name {
     grid-area: profileName;
     color: #322c2c;
     padding-left: 30px;
@@ -59,6 +64,7 @@
     font-size: 18px;
 
 }
+
 .profile__About_Me {
     grid-area: profileAboutMe;
     color: #322c2c;
@@ -68,26 +74,30 @@
     font-weight: 700;
 
 }
-.profile__About_Me ul{
+
+.profile__About_Me ul {
     grid-area: profileAboutMe;
     color: #322c2c;
     list-style: none;
     padding-left: 30px;
 
 }
-.profile__MyPosts{
+
+.profile__MyPosts {
     grid-area: myPosts;
     align-self: start;
     color: #322c2c;
     font-weight: 500;
     font-size: 32px;
 }
-.profile__Input{
+
+.profile__Input {
     grid-area: profileInput;
     align-self: end;
 
 }
-.profile__Input input{
+
+.profile__Input input {
     grid-area: profileInput;
     width: 90%;
     height: 80px;
@@ -101,15 +111,15 @@
     padding-left: 20px;
 
 
-
 }
 
-.profile__ButtonSend{
+.profile__ButtonSend {
     grid-area: profileButton;
     align-self: center;
     justify-self: end;
 }
-.profile__ButtonSend button{
+
+.profile__ButtonSend button {
     background: #3CB371;;
     margin-right: 75px;
     padding: 7px;
@@ -117,65 +127,7 @@
     font-size: 22px;
 }
 
-.profile__NewsAll{
+.profile__NewsAll {
     grid-area: profileNewsAll;
-    display: grid;
-    grid-template-areas:
-"News1 News1 News1 News1 News1 News1"
-"News2 News2 News2 News2 News2 News2";
-    grid-template-rows: 90px 90px;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 15px;
-    margin: 0 auto;
-    width: 1280px;
-}
-.profile__News1{
-    grid-area: News1;
-    display: grid;
-    grid-template-areas:
-"Circle MyNews1 MyNews1 ";
-    grid-template-rows: 90px;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 15px;
-    margin: 0 auto;
-    width: 1280px;
-}
-.profile__MyNews1 {
-    grid-area: MyNews1;
-    justify-self: start;
-    align-self: start;
-}
-.profile__News2{
-    grid-area: News2;
-    display: grid;
-    grid-template-areas:
-"Circle MyNews2 MyNews2 ";
-    grid-template-rows: 90px;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 15px;
-    margin: 0 auto;
-    width: 1280px;
-}
-.profile__MyNews2 {
-    grid-area: MyNews2;
-    justify-self: start;
-    align-self: start;
-}
 
-
-
-.profile__Circle {
-    grid-area: Circle;
-    width: 45px;
-    height: 45px;
-    background: yellow;
-    border-radius: 50%;
-    margin-top: 10px;
-
-}
-.profile__NewsAll p{
-
-    color: #322c2c;
-    font-weight: 600;
-    font-size: 20px;
 }
