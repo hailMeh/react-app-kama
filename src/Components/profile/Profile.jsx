@@ -28,8 +28,7 @@ const Profile = () => {
                 <NewPost message={'oh,yes'}/>
                 <NewPost message={'oh,problems'}/>
                 <NewPost messagetry={'oh,problemssss'}/>
-
-
+                <NewPost message={'testsss'}/>
             </div>
         </div>
     )
