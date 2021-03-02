@@ -1,13 +1,25 @@
-.list{
+.list {
     list-style-type: none;
     color: white;
     font-size: 32px;
 }
-.settings{
+
+.settings {
     padding-top: 40px;
 }
+
 .navigation {
     grid-area: navi;
     background: #3CB371;
 
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.activeLink {
+    color: deepskyblue;
+    text-decoration: none;
 }
