@@ -2,16 +2,21 @@
     display: grid;
     grid-template-areas:
 "header header header"
-"navi profile profile";
-    grid-template-rows: 80px 920px;
+"navi wrap wrap";
+    grid-template-rows: 80px 1020px;
     grid-template-columns: 1fr 2fr 3fr;
     grid-gap: 18px;
     margin: 0 auto;
     width: 1280px;
 }
 
+.wrapper-content {
+    grid-area: wrap;
+}
+
+
 .profile {
-    grid-area: profile;
+
 
     display: grid;
     grid-template-rows: 260px 60px 100px 60px 120px 60px 90px 90px;

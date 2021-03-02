@@ -3,8 +3,8 @@ const Navigation = () => {
     return(
         <div className={navi.navigation}>
             <ul className={navi.list}>
-                <li>Profile</li>
-                <li>Messages</li>
+                <li><a href={"/profile/profile.jsx"}>Profile </a></li>
+                <li><a href={"/dialogs/dialogs.jsx"}>Messages</a></li>
                 <li>News</li>
                 <li>Music</li>
                 <li className={navi.settings}>Settings</li>
