@@ -1,5 +1,5 @@
 import NewPost from "./post/post";
-
+import video from "../../video/main.mp4"
 let PostData = [
     {id: 1, post: 'Hello', likesCounter: 12},
     {id: 2, post: 'How are you today?', likesCounter: 22},
@@ -12,8 +12,9 @@ let PostElementsArray = PostData.map( p => <NewPost post={p.post} likes={p.likes
 const Profile = () => {
     return (
         <div className={"profile"}>
-            <div className={"profile__MainImage"}><img
-                src='https://www.clearrisk.com/hubfs/social%20media%20on%20a%20computer%20and%20phone.jpg' alt={""}/>
+            <div className={"profile__MainImage"}>
+                <video src={video} loop autoPlay muted>
+                </video>
             </div>
             <div className={"profile__Avatar"}><img
                 src='https://images.chesscomfiles.com/uploads/v1/user/37708826.2c5c9165.1200x1200o.490f96c03c0c.jpeg'
