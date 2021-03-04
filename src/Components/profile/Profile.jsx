@@ -1,5 +1,14 @@
 import NewPost from "./post/post";
 
+let PostData = [
+    {id: 1, post: 'Hello', likesCounter: 12},
+    {id: 2, post: 'How are you today?', likesCounter: 22},
+    {id: 3, post: 'Ok', likesCounter: 3},
+    {id: 4, post: 'Morning', likesCounter: 4},
+
+]
+
+
 const Profile = () => {
     return (
         <div className={"profile"}>
@@ -24,11 +33,12 @@ const Profile = () => {
                 <button>Send</button>
             </div>
             <div className={"profile__NewsAll"}>
-                <NewPost message={'oh,no'}/>
-                <NewPost message={'oh,yes'}/>
-                <NewPost message={'oh,problems'}/>
-                <NewPost messagetry={'oh,problemssss'}/>
-                <NewPost message={'testsss'}/>
+                <NewPost post={PostData[0].post} likes={PostData[0].likesCounter}/>
+                <NewPost post={PostData[1].post} likes={PostData[1].likesCounter}/>
+                <NewPost post={PostData[2].post} likes={PostData[2].likesCounter}/>
+                <NewPost post={PostData[3].post} likes={PostData[3].likesCounter}/>
+
+
             </div>
         </div>
     )

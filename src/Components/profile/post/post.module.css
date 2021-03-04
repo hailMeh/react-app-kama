@@ -1,10 +1,16 @@
+.post__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    text-align: center;
+
+
+}
 
 .profile__img {
-    background: url("https://images.chesscomfiles.com/uploads/v1/user/57010166.6e4df069.1200x1200o.19af94f0d651.png");
+    background: deepskyblue;
     background-size: cover;
     width: 55px;
     height: 55px;
-
     border-radius: 50%;
     margin-top: 10px;
 
@@ -14,7 +20,16 @@
     color: #322c2c;
     font-weight: 700;
     font-size: 20px;
-    padding-left: 150px;
+    padding-top: 20px;
+    text-align: center;
 
 }
 
+.likes {
+    color: #322c2c;
+
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+
+}

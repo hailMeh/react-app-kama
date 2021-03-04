@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-rows: 260px 60px 100px 60px 120px 60px 90px 90px;
-    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 3fr 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     width: 1055px;
     grid-gap: 10px;
@@ -54,7 +54,7 @@
 }
 
 .profile__Avatar img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-size: cover;
     border-radius: 21px;
@@ -132,7 +132,3 @@
     font-size: 22px;
 }
 
-.profile__NewsAll {
-    grid-area: profileNewsAll;
-
-}
