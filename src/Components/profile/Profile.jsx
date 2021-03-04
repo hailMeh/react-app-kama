@@ -7,7 +7,7 @@ let PostData = [
     {id: 4, post: 'Morning', likesCounter: 4},
 
 ]
-
+let PostElementsArray = PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
 
 const Profile = () => {
     return (
@@ -33,11 +33,8 @@ const Profile = () => {
                 <button>Send</button>
             </div>
             <div className={"profile__NewsAll"}>
-                <NewPost post={PostData[0].post} likes={PostData[0].likesCounter}/>
-                <NewPost post={PostData[1].post} likes={PostData[1].likesCounter}/>
-                <NewPost post={PostData[2].post} likes={PostData[2].likesCounter}/>
-                <NewPost post={PostData[3].post} likes={PostData[3].likesCounter}/>
 
+                { PostElementsArray }
 
             </div>
         </div>
