@@ -1,0 +1,9 @@
+.message {
+    padding: 30px;
+    color: gray;
+    font-size: 22px;
+}
+
+.message_item {
+    padding: 10px;
+}

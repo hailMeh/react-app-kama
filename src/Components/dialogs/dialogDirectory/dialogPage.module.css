@@ -1,7 +1,8 @@
+
 .dialogs {
     font-weight: 600;
     font-size: 26px;
-    padding: 40px;
+    padding: 10px;
 
 }
 
@@ -17,7 +18,6 @@
 
 .dialogs a:hover {
     text-decoration: none;
-    color: #322c2c;
     color: deepskyblue;
 }
 
@@ -25,4 +25,3 @@
 .activelink {
     color: deepskyblue;
 }
-

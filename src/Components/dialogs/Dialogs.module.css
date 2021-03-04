@@ -1,44 +1,6 @@
 .messages__container {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 2fr 6fr;
     text-align: center;
-}
-
-.dialogs {
-    font-weight: 600;
-    font-size: 26px;
-    padding: 40px;
-
-}
-
-.dialogs__item {
-    padding: 20px;
-
-}
-
-.dialogs a {
-    text-decoration: none;
-    color: #322c2c;
-}
-
-.dialogs a:hover {
-    text-decoration: none;
-    color: #322c2c;
-    color: deepskyblue;
-}
-
-
-.activelink {
-    color: deepskyblue;
-}
-
-
-.message {
-    padding: 80px;
-    color: gray;
-    font-size: 22px;
-}
-
-.message_item {
-    padding: 30px;
+    background: #cacaca;;
 }

@@ -1,17 +1,25 @@
 import s from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
-import DialogPage from './dialogsDirect/DialogPage'
+import DialogPage from './dialogDirectory/dialogPage'
+import MessagesChat from "./messageDirectory/messages";
 
-const Dialogs = () => {
+
+const Dialogs = (props) => {
     return (
         <div className={s.messages__container}>
-            <DialogPage />
-            <div className={s.message}>
-                <div className={s.message_item}>Hiho</div>
-                <div className={s.message_item}>Let's rock</div>
-                <div className={s.message_item}>oh my</div>
-                <div className={s.message_item}>no thanks</div>
-                <div className={s.message_item}>you sure?</div>
+            <div className={s.dialogs_wrapper}>
+                <DialogPage id={'/dialogs/dialogs.jsx/1'} person={'Josh'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/2'} person={'Fred'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/3'} person={'Chris'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/4'} person={'Amilie'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/5'} person={'Steve'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/6'} person={'Daizy'}/>
+                <DialogPage id={'/dialogs/dialogs.jsx/7'} person={'Maria'}/>
+            </div>
+            <div className={s.messages_wrapper}>
+                <MessagesChat message={'Hello'}/>
+                <MessagesChat message={'How are you today?'}/>
+                <MessagesChat message={'Ok'}/>
+                <MessagesChat message={'Morning'}/>
             </div>
         </div>
     )
