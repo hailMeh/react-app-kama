@@ -1,15 +1,10 @@
 import NewPost from "./post/post";
 import video from "../../video/main.mp4"
-let PostData = [
-    {id: 1, post: 'Hello', likesCounter: 12},
-    {id: 2, post: 'How are you today?', likesCounter: 22},
-    {id: 3, post: 'Ok', likesCounter: 3},
-    {id: 4, post: 'Morning', likesCounter: 4},
 
-]
-let PostElementsArray = PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
 
-const Profile = () => {
+
+const Profile = (props) => {
+    let PostElementsArray = props.PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
     return (
         <div className={"profile"}>
             <div className={"profile__MainImage"}>
