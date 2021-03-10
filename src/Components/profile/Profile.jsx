@@ -4,7 +4,7 @@ import video from "../../video/main.mp4"
 
 
 const Profile = (props) => {
-    let PostElementsArray = props.PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
+    let PostElementsArray = props.state.PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
     return (
         <div className={"profile"}>
             <div className={"profile__MainImage"}>

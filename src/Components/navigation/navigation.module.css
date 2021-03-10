@@ -23,3 +23,9 @@ li a {
     color: deepskyblue;
     text-decoration: none;
 }
+
+.friends {
+    padding-top: 35px;
+    font-size: 22px;
+    font-weight: 600;
+}

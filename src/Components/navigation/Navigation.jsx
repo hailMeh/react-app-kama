@@ -1,7 +1,10 @@
 import navi from './navigation.module.css';
 import {NavLink} from "react-router-dom";
+import FriendsOnline from "./FriendsOnlinePage/FriendsOnline";
+import s from "./FriendsOnlinePage/FriendsOnline.module.css";
 
-const Navigation = () => {
+const Navigation = (props) => {
+    let FriendsOnlineArray = props.state.FriendsOnlineData.map(p => <FriendsOnline id={p.id} person={p.person}/>)
     return (
         <div className={navi.navigation}>
             <ul className={navi.list}>
@@ -10,6 +13,8 @@ const Navigation = () => {
                 <li>News</li>
                 <li>Music</li>
                 <li className={navi.settings}>Settings</li>
+                <div className={navi.friends}>Friends online</div>
+                {FriendsOnlineArray}
             </ul>
         </div>
     )

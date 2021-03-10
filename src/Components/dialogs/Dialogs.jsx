@@ -7,8 +7,8 @@ import MessagesChat from "./messageDirectory/messages";
 
 
 const Dialogs = (props) => {
-    let DialogsElementsArray = props.DialogsData.map(p => <DialogPage id={p.id} person={p.person}/>)
-    let MessagesElementsArray = props.MessagesData.map(m => <MessagesChat message={m.message}/>)
+    let DialogsElementsArray = props.state.DialogsData.map(p => <DialogPage id={p.id} person={p.person}/>)
+    let MessagesElementsArray = props.state.MessagesData.map(m => <MessagesChat message={m.message}/>)
     return (
         <div className={s.messages__container}>
             <div className={s.dialogs_wrapper}>

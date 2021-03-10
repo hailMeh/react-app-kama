@@ -1,0 +1,24 @@
+
+.friends__favorite_img {
+    background: deepskyblue;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+
+}
+.friends__favorite {
+    padding-right: 8px;
+}
+.friends__favorite_online {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px;
+
+}
+.friends__align {
+    display:table-cell;
+    padding-top: 8px;
+}
