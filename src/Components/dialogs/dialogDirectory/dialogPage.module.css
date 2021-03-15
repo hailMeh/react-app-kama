@@ -7,13 +7,16 @@
 }
 
 .dialogs__item {
-    padding: 20px;
+    padding: 15px;
+
 
 }
 
 .dialogs a {
     text-decoration: none;
     color: #322c2c;
+
+
 }
 
 .dialogs a:hover {
@@ -24,4 +27,15 @@
 
 .activelink {
     color: deepskyblue;
+}
+.dialog__avatar {
+    width: 40%;
+    height: 40%;
+    border-radius: 30%;
+
+}
+.dialog__names {
+
+
+
 }
