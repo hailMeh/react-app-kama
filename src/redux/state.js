@@ -1,3 +1,5 @@
+
+import {updateRenderTree} from '../render';
 let state = {
     ProfilePage: {
         PostData: [
@@ -44,10 +46,11 @@ let state = {
 export let addPost = (postMessage) => {
     let newPost = {
         id: 5,
-        message: 'New Message',
-        likesCounter: 3
+        post: 'hi',
+        likesCounter: 0
     };
     state.ProfilePage.PostData.push(newPost)
+    updateRenderTree(state);
 }
 
 export default state;
