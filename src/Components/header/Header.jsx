@@ -3,7 +3,7 @@ const Header = () => {
     return (
         <div className={head.header}>
             <div><img className={head.logo}
-                src="https://st.depositphotos.com/1105977/2595/i/950/depositphotos_25954971-stock-photo-colored-circle.jpg"
+                src="https://ivanovo-prof.ru/images/cms/thumbs/a4f0d6f5fa98fbcd87ba71c74d31f1c516f30e99/sotrudnichestvo_256_auto_png.png"
                 alt=""/></div>
         </div>
     )

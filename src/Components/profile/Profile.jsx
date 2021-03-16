@@ -11,6 +11,7 @@ const Profile = (props) => {
     let addPost = () => {
     let text = newPostElement.current.value;
     props.addPost(text)
+        newPostElement.current.value = '';
     }
     return (
         <div className={"profile"}>
@@ -31,7 +32,7 @@ const Profile = (props) => {
                 </ul>
             </div>
             <div className={"profile__MyPosts"}><p>My Posts</p></div>
-            <div className={"profile__Textarea"}><textarea ref={newPostElement}></textarea></div>
+            <div className={"profile__Textarea"}><textarea ref={newPostElement} /></div>
             <div className={"profile__ButtonSend"}>
                 <button onClick={addPost}>Send</button>
             </div>

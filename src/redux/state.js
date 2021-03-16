@@ -46,7 +46,7 @@ let state = {
 export let addPost = (postMessage) => {
     let newPost = {
         id: 5,
-        post: 'hi',
+        post: postMessage,
         likesCounter: 0
     };
     state.ProfilePage.PostData.push(newPost)
