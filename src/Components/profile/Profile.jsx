@@ -9,9 +9,13 @@ const Profile = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
-    let text = newPostElement.current.value;
-    props.addPost(text)
-        newPostElement.current.value = '';
+        props.addPost();
+
+    };
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.updateLockText(text);
+
     }
     return (
         <div className={"profile"}>
@@ -32,7 +36,8 @@ const Profile = (props) => {
                 </ul>
             </div>
             <div className={"profile__MyPosts"}><p>My Posts</p></div>
-            <div className={"profile__Textarea"}><textarea ref={newPostElement} /></div>
+            <div className={"profile__Textarea"}><textarea onChange={onPostChange} ref={newPostElement}
+                                                           value={props.inputLockText}/></div>
             <div className={"profile__ButtonSend"}>
                 <button onClick={addPost}>Send</button>
             </div>
