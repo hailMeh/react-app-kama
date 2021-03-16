@@ -1,10 +1,17 @@
+import React from 'react';
 import NewPost from "./post/post";
 import video from "../../video/main.mp4"
 
 
-
 const Profile = (props) => {
-    let PostElementsArray = props.state.PostData.map( p => <NewPost post={p.post} likes={p.likesCounter}/>)
+    let PostElementsArray = props.state.PostData.map(p => <NewPost post={p.post} likes={p.likesCounter}/>)
+
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+    let text = newPostElement.current.value;
+    props.addPost(text)
+    }
     return (
         <div className={"profile"}>
             <div className={"profile__MainImage"}>
@@ -24,13 +31,13 @@ const Profile = (props) => {
                 </ul>
             </div>
             <div className={"profile__MyPosts"}><p>My Posts</p></div>
-            <div className={"profile__Input"}><input type={"text"} value={"Your News"}/></div>
+            <div className={"profile__Textarea"}><textarea ref={newPostElement}></textarea></div>
             <div className={"profile__ButtonSend"}>
-                <button>Send</button>
+                <button onClick={addPost}>Send</button>
             </div>
             <div className={"profile__NewsAll"}>
 
-                { PostElementsArray }
+                {PostElementsArray}
 
             </div>
         </div>

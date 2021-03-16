@@ -9,16 +9,16 @@ import {BrowserRouter, Route} from "react-router-dom";
 
 const App = (props) => {
     return (
-        <BrowserRouter>
+
             <div className="Container">
                 <Header/>
                 <Navigation state={props.state.NavigationPage} />
                 <div className={"wrapper-content"}>
-                    <Route path='/profile/profile.jsx' render={ () => <Profile state={props.state.ProfilePage} /> } />
-                    <Route path='/dialogs/dialogs.jsx' render={ () => <Dialogs state={props.state.DialogPage}/> } />
+                    <Route path='/profile/profile.jsx' render={ () => <Profile state={props.state.ProfilePage} addPost={props.addPost}/> } />
+                    <Route path='/dialogs/dialogs.jsx' render={ () => <Dialogs state={props.state.DialogPage} /> } />
                 </div>
             </div>
-        </BrowserRouter>
+
     );
 }
 

@@ -97,13 +97,13 @@
     font-size: 32px;
 }
 
-.profile__Input {
+.profile__Textarea {
     grid-area: profileInput;
     align-self: end;
 
 }
 
-.profile__Input input {
+.profile__Textarea textarea {
     grid-area: profileInput;
     width: 90%;
     height: 80px;

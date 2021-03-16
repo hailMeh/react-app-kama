@@ -1,6 +1,29 @@
 .messages__container {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 2fr 4fr;
     text-align: center;
-    background: #cacaca;;
+    background: #cacaca;
+}
+.dialogs__textarea textarea {
+    width: 60%;
+    height: 120px;
+    background: #fff;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    color: #777575;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    padding-left: 20px;
+
+}
+.dialogs_button {
+    position: absolute;
+    top: 600px;
+    background: #3CB371;
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+
+
 }
