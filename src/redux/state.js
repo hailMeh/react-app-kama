@@ -74,5 +74,12 @@ export let updateLockText = (newText) => {
     state.ProfilePage.inputLockText = newText
     updateRenderTree(state);
 }
-
+export let addMessage = (text) => {
+    let newMessage = {
+        id: 5,
+        message: text
+    };
+    state.DialogPage.MessagesData.push(newMessage)
+    updateRenderTree(state);
+}
 export default state;

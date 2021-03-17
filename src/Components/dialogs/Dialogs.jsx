@@ -10,7 +10,8 @@ const Dialogs = (props) => {
     let chatElement = React.createRef()
     let addChatMessage = () => {
         let chatMessage = chatElement.current.value;
-        alert(chatMessage);
+        props.addMessage(chatMessage);
+        chatElement.current.value = ''
     }
 
     return (
