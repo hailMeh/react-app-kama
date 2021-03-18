@@ -47,7 +47,8 @@ let state = {
         AvatarsData: [
             {src: "https://images.pexels.com/photos/350347/pexels-photo-350347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
             {src: "https://images.pexels.com/photos/350347/pexels-photo-350347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
-        ]
+        ],
+        inputLockTextDialogs: "What's new in town?"
     },
     NavigationPage: {
         FriendsOnlineData: [
@@ -67,19 +68,27 @@ export let addPost = () => {
         likesCounter: 0
     };
     state.ProfilePage.PostData.push(newPost)
-        state.ProfilePage.inputLockText = ''
+    state.ProfilePage.inputLockText = ''
     updateRenderTree(state);
 }
 export let updateLockText = (newText) => {
     state.ProfilePage.inputLockText = newText
     updateRenderTree(state);
 }
-export let addMessage = (text) => {
+export let addMessage = () => {
     let newMessage = {
         id: 5,
-        message: text
+        message: state.DialogPage.inputLockTextDialogs
     };
     state.DialogPage.MessagesData.push(newMessage)
+    state.DialogPage.inputLockTextDialogs = ''
     updateRenderTree(state);
 }
+export let updateLockTextDialogs = (text) => {
+    state.DialogPage.inputLockTextDialogs = text
+
+    updateRenderTree(state);
+}
+
+
 export default state;

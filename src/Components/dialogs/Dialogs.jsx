@@ -9,11 +9,15 @@ const Dialogs = (props) => {
     let MessagesElementsArray = props.state.MessagesData.map(m => <MessagesChat message={m.message}/>)
     let chatElement = React.createRef()
     let addChatMessage = () => {
-        let chatMessage = chatElement.current.value;
-        props.addMessage(chatMessage);
-        chatElement.current.value = ''
-    }
 
+        props.addMessage();
+
+    }
+    let onMessageChange = () => {
+        let text = chatElement.current.value;
+        props.updateLockTextDialogs(text);
+
+    }
     return (
         <div className={s.messages__container}>
             <div className={s.dialogs_wrapper}>
@@ -23,7 +27,8 @@ const Dialogs = (props) => {
 
             <div className={s.messages_wrapper}>
                 {MessagesElementsArray}
-                <div className={s.dialogs__textarea}><textarea ref={chatElement}></textarea>
+                <div className={s.dialogs__textarea}><textarea onChange={onMessageChange} ref={chatElement}
+                                                               value={props.state.inputLockTextDialogs}/>
                     <button className={s.dialogs_button} onClick={addChatMessage}>Send</button>
                 </div>
             </div>
