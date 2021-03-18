@@ -27,3 +27,9 @@
 
 
 }
+.messages_wrapper{
+    background: #a4c3c3;
+}
+.MessagesElementsArray{
+    border: 5px solid #3CB371;
+}

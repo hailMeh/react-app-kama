@@ -42,6 +42,8 @@ let state = {
             {id: 2, message: 'How are you today?'},
             {id: 3, message: 'Ok'},
             {id: 4, message: 'Morning'},
+            {id: 5, message: 'Evening'},
+            {id: 6, message: 'oi'},
 
         ],
         AvatarsData: [
@@ -77,11 +79,12 @@ export let updateLockText = (newText) => {
 }
 export let addMessage = () => {
     let newMessage = {
-        id: 5,
+        id: 7,
         message: state.DialogPage.inputLockTextDialogs
     };
     state.DialogPage.MessagesData.push(newMessage)
     state.DialogPage.inputLockTextDialogs = ''
+    state.DialogPage.MessagesData.shift()
     updateRenderTree(state);
 }
 export let updateLockTextDialogs = (text) => {

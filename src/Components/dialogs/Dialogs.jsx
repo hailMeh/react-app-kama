@@ -26,7 +26,7 @@ const Dialogs = (props) => {
             </div>
 
             <div className={s.messages_wrapper}>
-                {MessagesElementsArray}
+                <div className={s.MessagesElementsArray}> {MessagesElementsArray} </div>
                 <div className={s.dialogs__textarea}><textarea onChange={onMessageChange} ref={chatElement}
                                                                value={props.state.inputLockTextDialogs}/>
                     <button className={s.dialogs_button} onClick={addChatMessage}>Send</button>

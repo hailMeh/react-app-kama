@@ -1,9 +1,12 @@
 .message {
-    padding: 30px;
-    color: gray;
+    padding: 5px;
+
     font-size: 22px;
+
+    color: #322c2c;
+    font-family: "Calisto MT";
 }
 
 .message_item {
-    padding: 10px;
+    padding: 20px;
 }
